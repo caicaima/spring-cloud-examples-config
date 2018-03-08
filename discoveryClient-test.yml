@@ -1,0 +1,19 @@
+
+server:
+  port: 8666
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: discover-client1
+  profiles:
+    active: test
+management:
+  security:
+    enabled: false
+#actuator 开启endpoints
+endpoints:
+  routes:
+    enabled: true
